@@ -1,0 +1,5 @@
+br\edu\fiec\gaming\ecommerce\repository\GameRepository.class
+br\edu\fiec\gaming\ecommerce\GamingEcommerceApplication.class
+br\edu\fiec\gaming\ecommerce\service\GameService.class
+br\edu\fiec\gaming\ecommerce\controller\GameController.class
+br\edu\fiec\gaming\ecommerce\model\entity\Game.class

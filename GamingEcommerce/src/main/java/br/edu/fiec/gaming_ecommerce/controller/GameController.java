@@ -41,7 +41,7 @@ public class GameController {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(value = "genero", produces = APPLICATION_JSON_VALUE)
-    public Optional<List<Game>> getByGenero(String genero) {
+    public List<Game> getByGenero(String genero) {
         return gameService.getByGenero(genero);
     }
 

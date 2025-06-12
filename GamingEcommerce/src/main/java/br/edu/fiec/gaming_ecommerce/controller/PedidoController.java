@@ -39,7 +39,7 @@ public class PedidoController {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(value = "status", produces = APPLICATION_JSON_VALUE)
-    public Optional<List<Pedido>> getByStatus(String status) {
+    public List<Pedido> getByStatus(String status) {
         return pedidoService.getByStatus(status);
     }
 

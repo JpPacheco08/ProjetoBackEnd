@@ -28,8 +28,8 @@ public class GameService {
         return gameRepository.findById(id).orElse(null);
     }
 
-    public Optional<List<Game>> getByGenero(String genero) {
-        return gameRepository.findByGenero(genero);
+    public List<Game> getByGenero(String genero) {
+        return gameRepository.findByGenero(genero).orElse(null);
     }
 
     public void deleteById(Integer id) {

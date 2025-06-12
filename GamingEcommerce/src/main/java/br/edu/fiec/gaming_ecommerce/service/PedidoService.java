@@ -28,8 +28,8 @@ public class PedidoService {
         return pedidoRepository.findById(id_pedido).orElse(null);
     }
 
-    public Optional<List<Pedido>> getByStatus(String status) {
-        return pedidoRepository.findByStatus(status);
+    public List<Pedido> getByStatus(String status) {
+        return pedidoRepository.findByStatus(status).orElse(null);
     }
 
     public void deleteById(Integer id_pedido) {
